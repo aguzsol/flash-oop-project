@@ -17,6 +17,8 @@ const app = Vue.createApp({
         },
         closeAddCard() {
             this.isAddCardVisible = false
+            this.editingCard = undefined
+
         },
         toggleAnswerVisibility(flashcard) {
             flashcard.showAnswer = !flashcard.showAnswer
